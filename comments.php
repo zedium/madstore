@@ -7,7 +7,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @packageMadstore_woocomerce
+ * @package Madstore_woocomerce
  */
 
 /*

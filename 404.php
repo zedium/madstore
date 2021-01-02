@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @packageMadstore_woocomerce
+ * @package Madstore_woocomerce
  */
 
 get_header();

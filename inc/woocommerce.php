@@ -4,7 +4,7 @@
  *
  * @link https://woocommerce.com/
  *
- * @packageMadstore_woocomerce
+ * @package Madstore_woocomerce
  */
 
 /**

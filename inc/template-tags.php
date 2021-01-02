@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @packageMadstore_woocomerce
+ * @package Madstore_woocomerce
  */
 
 if ( ! function_exists( 'madstore_woocomerce_posted_on' ) ) :

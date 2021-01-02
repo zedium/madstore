@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @packageMadstore_woocomerce
+ * @package Madstore_woocomerce
  */
 
 get_header();

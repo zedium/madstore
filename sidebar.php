@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @packageMadstore_woocomerce
+ * @package Madstore_woocomerce
  */
 
 if ( ! is_active_sidebar( 'sidebar-1' ) ) {

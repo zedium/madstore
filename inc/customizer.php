@@ -2,7 +2,7 @@
 /**
  *Madstore_woocomerce Theme Customizer
  *
- * @packageMadstore_woocomerce
+ * @package Madstore_woocomerce
  */
 
 /**

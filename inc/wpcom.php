@@ -4,7 +4,7 @@
  *
  * This file is centrally included from `wp-content/mu-plugins/wpcom-theme-compat.php`.
  *
- * @packageMadstore_woocomerce
+ * @package Madstore_woocomerce
  */
 
 /**

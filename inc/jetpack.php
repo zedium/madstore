@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @packageMadstore_woocomerce
+ * @package Madstore_woocomerce
  */
 
 /**

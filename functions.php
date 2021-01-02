@@ -4,13 +4,17 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @packageMadstore_woocomerce
+ * @package Madstore_woocomerce
  */
 
 if ( ! defined( 'MADSTORE_WOOCOMMERCE_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
 	define( 'MADSTORE_WOOCOMMERCE_VERSION', '1.0.0' );
 }
+
+
+require_once('inc/register-scripts.php');
+
 
 if ( ! function_exists( 'madstore_woocomerce_setup' ) ) :
 	/**
@@ -148,6 +152,10 @@ function madstore_woocomerce_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	wp_enqueue_script('bootstrap');
+	wp_enqueue_script('bootstrap-popper');
+	wp_enqueue_style( 'bootstrap');
 }
 add_action( 'wp_enqueue_scripts', 'madstore_woocomerce_scripts' );
 

@@ -8,7 +8,7 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @packageMadstore_woocomerce
+ * @package Madstore_woocomerce
  */
 
 /**
