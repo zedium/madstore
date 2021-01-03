@@ -156,6 +156,14 @@ function madstore_woocomerce_scripts() {
 	wp_enqueue_script('bootstrap');
 	wp_enqueue_script('bootstrap-popper');
 	wp_enqueue_style( 'bootstrap');
+	
+	//wp_enqueue_style( 'fontawesome');
+	wp_enqueue_style( 'gfont1');
+	wp_enqueue_style( 'simplelineicon');
+	
+
+
+	wp_enqueue_style( 'custom');
 }
 add_action( 'wp_enqueue_scripts', 'madstore_woocomerce_scripts' );
 

@@ -1,0 +1,118 @@
+$woocommerce__color-error: #e2401c;
+$woocommerce__color-success: #0f834d;
+$woocommerce__color-info: #3d9cd2;
+
+$text-color-gray1: #777777;
+$text-color-gray2: #444444;
+$anchor-hover-color:#09f;
+$anchor-delimiter-color: #999999;
+
+
+$topbar-height: 42px;
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.topbar{
+    min-height: 42px;
+    color: $text-color-gray1;
+    text-transform: uppercase;
+    .final-content-wrapper{
+        height: 100%;
+        display: block;
+
+   
+    
+        a{
+            text-decoration: none;
+            display: table-cell;
+            vertical-align: middle;
+            height: $topbar-height;
+            
+            font-size: 0.9em;
+            span.has-right-delimiter{
+                border: 0;
+                border-style: solid;
+                border-right-width: 1px;
+                border-color: $anchor-delimiter-color;
+                padding-right:25px;
+            }
+        }
+        
+        a:visited{
+            color: $text-color-gray1;
+        }
+        a:hover{
+            color: $anchor-hover-color;
+        }
+    }
+        p{
+            display: table-cell;
+            vertical-align: middle;
+            height: $topbar-height;
+            font-size: 0.9em;
+            span{
+                margin-left: 5px;
+            }
+        }
+    
+    
+    
+}
+
+
+header.site-header{
+    background-color:#f8f8f8;
+    text-transform: uppercase;
+    img{
+        height: 80px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    nav.main-navigation{
+        height: 80px;
+        div.menu-main-menu-container{
+            height: 100%;
+
+            ul.menu{
+                height: 100%;
+                display: table;
+                li.menu-item{
+                    display: table-cell;
+                    vertical-align: middle;
+                    padding: 10px 10px 10px 10px;
+                    a{
+                        display: block;
+                        text-decoration: none;
+                        color: $text-color-gray1;
+
+                        
+                    }
+                   
+                    a:visited{
+                        color: $text-color-gray1;
+                    }
+                    a:hover{
+                        color: $anchor-hover-color;
+                    }
+                }
+
+                li.menu-item-has-children:after{
+                    position: absolute;
+                    top: 45%;
+                    left:80%;
+                    font-family: "simple-line-icons";
+                    font-size: 6px;
+                    content: "\e604";
+                    
+                }
+            }
+        }
+        
+        
+       
+
+    }
+}
