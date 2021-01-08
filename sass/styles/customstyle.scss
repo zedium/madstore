@@ -15,99 +15,151 @@ body{
 }
 
 .topbar{
+    display: flex;
     min-height: 42px;
+    align-items: center;
     color: $text-color-gray1;
     text-transform: uppercase;
-    .final-content-wrapper{
-        height: 100%;
-        display: block;
+    .top-menu{
+        
+        width: auto;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
 
-   
-    
-        a{
-            text-decoration: none;
-            display: table-cell;
-            vertical-align: middle;
-            height: $topbar-height;
+        
+        
+        li{
+            padding: 0px 25px 0px 25px;
+            margin: 0;
+            height: 20px;
+            line-height: 20px;
+            a{
             
-            font-size: 0.9em;
-            span.has-right-delimiter{
-                border: 0;
-                border-style: solid;
-                border-right-width: 1px;
-                border-color: $anchor-delimiter-color;
-                padding-right:25px;
+            
+                text-decoration: none;
+                font-size: 0.8em;
+                
             }
+            
+            a:visited{
+                color: $text-color-gray1;
+            }
+            a:hover{
+                color: $anchor-hover-color;
+            }
+        }
+        li.has-right-delimiter{
+            border: 0;
+            border-style: solid;
+            border-right-width: 1px;
+            border-color: $anchor-delimiter-color;
+            //padding-right:25px;
         }
         
-        a:visited{
-            color: $text-color-gray1;
-        }
-        a:hover{
-            color: $anchor-hover-color;
-        }
     }
-        p{
-            display: table-cell;
-            vertical-align: middle;
-            height: $topbar-height;
-            font-size: 0.9em;
-            span{
-                margin-left: 5px;
-            }
-        }
-    
-    
-    
 }
 
+
+$header_height : 80px;
 
 header.site-header{
     background-color:#f8f8f8;
     text-transform: uppercase;
     img{
-        height: 80px;
+        height: $header_height;
         padding-top: 10px;
         padding-bottom: 10px;
     }
 
     nav.main-navigation{
-        height: 80px;
+        height: $header_height;
+        
         div.menu-main-menu-container{
             height: 100%;
+            display: flex;
+            .menu{
+        
+                width: auto;
+                display: flex;
+                align-content: center;
+                align-items: center;
+                
+                list-style: none;
+                padding: 0px;
+                margin: 0px;
+        
+                
+                
+                li{
+                    padding: 0px 15px 0px 15px;
+                    margin: 0;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
 
-            ul.menu{
-                height: 100%;
-                display: table;
-                li.menu-item{
-                    display: table-cell;
-                    vertical-align: middle;
-                    padding: 10px 10px 10px 10px;
                     a{
-                        display: block;
+                    
+                    
                         text-decoration: none;
-                        color: $text-color-gray1;
-
+                        font-size: 0.8em;
                         
                     }
-                   
+                    
                     a:visited{
                         color: $text-color-gray1;
                     }
                     a:hover{
                         color: $anchor-hover-color;
                     }
+
+
+                   
+
                 }
 
                 li.menu-item-has-children:after{
-                    position: absolute;
-                    top: 45%;
-                    left:80%;
+                    
+                    display: flex;
+                    align-items: center;
+                    margin-left: 10px;
                     font-family: "simple-line-icons";
                     font-size: 6px;
                     content: "\e604";
                     
                 }
+
+
+
+                
+                
+            }
+            
+            .sub-menu{
+                padding-top: 20px;
+                flex-direction: column;
+                li.menu-item{
+                    a{
+                        line-height: 25px;
+                        height: 40px;
+                        width: 300px;
+                    }
+                }
+                li.menu-item-has-children:after{
+                    
+                    display: flex;
+                    align-items: center;
+                    margin-left: 10px;
+                    font-family: "simple-line-icons";
+                    font-size: 6px;
+                    content: "\e606";
+                    
+                }
+
             }
         }
         
@@ -115,4 +167,76 @@ header.site-header{
        
 
     }
+
+    $basket_items_count_color:#437df9;
+    $basket_items_border_color:#e4e4e4;
+    .basket-wrapper{
+        height: $header_height;
+        
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: space-around;
+        color: $text-color-gray1;
+        .icon-wrapper{
+            width: $header_height;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+            
+            
+            a{
+                align-content: center;
+                align-items: center;
+                display: flex;
+                text-decoration: none;
+                color: $text-color-gray1;
+                i{
+                    font-family: "simple-line-icons";
+                    font-size: 20px;
+                }
+            }
+            a:visited{
+                color: $text-color-gray1;
+            }
+            a:hover{
+                color: $anchor-hover-color;
+            }
+
+
+        }
+
+        .border-right{
+            border-right: 1px solid $basket_items_border_color;
+        }
+        .border-left{
+            border-left: 1px solid $basket_items_border_color;
+        }
+        
+        .items-count{
+            position: absolute;
+            background-color: $basket_items_count_color;
+            width:16px;
+            height: 16px;
+            font-size: 12px;
+            left:25%;
+            top:50%;
+            text-align: center;
+            color: #fff;
+            border-radius: 50px;
+        }
+    
+    }
+}
+
+
+.site-main{
+    margin-top: 40px;
+}
+
+
+#footer{
+    text-align: center;
+    margin-top: 50px;;
 }

@@ -26,17 +26,17 @@
 	<div class="container">	
 		<div class="row topbar justify-content-between">
 			<div class="col-md-6 col-sm-12 col-xs-12 justify-content-start">
-				<p>	
+				
 					<i class="icon-phone"></i>
 					<span>CALL US: +1 (987) 654 321</span>
-				</p>
+				
 			</div>
 			<div class="col-md-6 col-sm-12 col-xs-12 justify-content-start">
-				<div class="final-content-wrapper float-right">
-					<a href="#" class=""><span class="has-right-delimiter">Login / Register</span></a>
-					<a href="#" class=""><span class="has-right-delimiter">Account</span></a>
-					<a href="#" class=""><span>Contact us</span></a>
-				</div>
+				<ul class="top-menu">
+					<li class="has-right-delimiter"><a href="#" class=""><span >Login / Register</span></a></li>
+					<li class="has-right-delimiter"><a href="#" class=""><span >Account</span></a></li>
+					<li><a href="#" class=""><span>Contact us</span></a></li>
+				</ul>
 			</div>
 		</div>
 	</div>	
@@ -62,8 +62,23 @@
 					</nav><!-- #site-navigation -->
 				</div>
 				<div class="col-md-3">
-
+					<div class="basket-wrapper">
+						<div class="icon-wrapper border-left border-right">
+							<a href="#"><i class="icon-magnifier" title="Search"></i></a>
+						</div>
+						<div class="icon-wrapper border-right">
+							<a href="#">
+								<span class="items-count">1</span>
+								<i class="icon-bag" title="Basket"></i>
+							</a>
+						</div>
+						<div class="icon-wrapper border-right">
+							<a href="#"><i class="icon-user" title="Profile"></i></a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</header><!-- #masthead -->
+
+	

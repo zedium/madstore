@@ -158,7 +158,7 @@ function madstore_woocomerce_scripts() {
 	wp_enqueue_style( 'bootstrap');
 	
 	//wp_enqueue_style( 'fontawesome');
-	wp_enqueue_style( 'gfont1');
+	//wp_enqueue_style( 'gfont1');
 	wp_enqueue_style( 'simplelineicon');
 	
 
